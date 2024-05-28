@@ -1,0 +1,41 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Go Web Examples - Forms</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            {{if .Success}}
+            <h1>Thanks for your message!</h1>
+            <br>
+            <h2>Email: {{.Email}}</h2><br>
+            <h2>Subject: {{.Subject}}</h2><br>
+            <h2>Message: {{.Message}}</h2><br>
+            {{else}}
+            <h1>Go Web Examples - Forms</h1>
+            <br>
+            <h2>Contact Information:</h2>
+            <form method="POST">
+                <label>Email:</label><br />
+                <input class="text-area" type="text" name="email"><br />
+                <label>Subject:</label><br />
+                <input class="text-area" type="text" name="subject"><br />
+                <label>Message:</label><br />
+                <textarea class="text-area" name="message" rows="5" cols="40"></textarea><br />
+                <input class="button" type="submit" value="Submit">
+            </form>
+            {{end}}
+        </section>
+    </main>
+</body>
+
+</html>
+

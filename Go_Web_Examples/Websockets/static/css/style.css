@@ -1,0 +1,53 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+main {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.text-area {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(170, 228, 228);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.button {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(64, 231, 231);
+    border: 2px solid black;
+    border-radius: 5px;
+}
