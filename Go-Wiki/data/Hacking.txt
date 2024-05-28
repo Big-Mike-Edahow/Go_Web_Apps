@@ -1,0 +1,5 @@
+I really enjoy programming in Go, HTML, CSS, JavaScript and SQL.
+
+I prefer to keep my programs simple. I like a simple directory structure. My coding style is that of a procedural, functional programmer.
+
+I never really have been able to wrap my head around Object Oriented Programming. 😆

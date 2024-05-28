@@ -1,0 +1,91 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+main {
+    margin: 30px;
+    padding: 10px;
+}
+
+.headline-h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+figure>img {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.post-view {
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(230, 203, 230);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.text-area {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 5px;
+    padding: 5px;
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.button {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(185, 208, 230);
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+}
+
+.button:active {
+    box-shadow: inset 2px 2px 2px black;
+}
