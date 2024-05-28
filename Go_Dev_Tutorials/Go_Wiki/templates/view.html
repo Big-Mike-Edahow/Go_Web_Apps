@@ -1,0 +1,40 @@
+<!-- view.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>View Post</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Big Mike's Go Wiki!</h1>
+            <br><br>
+        </section>
+        <section class="grid-container">
+            <article>
+                <h1>Title: {{.Title}}</h1>
+                <br>
+                <div class="post-view">
+                <p>{{printf "%s" .Body}}</p>
+                </div>
+                <br>
+                <form action="/edit/{{.Title}}" method="POST">
+                    <input class="button" type="submit" value="Edit">
+                </form>
+            </article>
+            <figure>
+                <img src="../static/images/Big_Mike.jpg" alt="Big Mike" width="320px">
+                <figcaption>Big Mike!</figcaption>
+            </figure>
+            <br>
+        </section>
+    </main>
+</body>
+
+</html>

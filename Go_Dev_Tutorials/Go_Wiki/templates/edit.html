@@ -1,0 +1,37 @@
+<!-- edit.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Edit Post</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Big Mike's Go Wiki!</h1>
+            <br><br>
+        </section>
+        <section class="grid-container">
+            <article>
+                <h1>Editing {{.Title}}</h1>
+                <br>
+                <form action="/save/{{.Title}}" method="POST">
+                    <textarea class="text-area" name="body" rows="10" cols="40">{{printf "%s" .Body}}</textarea>
+                    <br><br>
+                    <input class="button" type="submit" value="Save">
+                </form>
+            </article>
+            <figure>
+                <img src="../static/images/Malad_Idaho.jpg" alt="Malad, Idaho" width="400px">
+                <figcaption>Malad, Idaho</figcaption>
+            </figure>
+        </section>
+    </main>
+</body>
+
+</html>
