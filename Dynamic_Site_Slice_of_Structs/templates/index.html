@@ -1,0 +1,47 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/CSS/style.css" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">Home 🏠</a>
+        <h1>📘📕📗 Big Mike's Booklist! 📗📕📘</h1>
+        <a href="/about">About ℹ️</a>
+    </header>
+    <main>
+        <section class="center">
+            <h1>Big Mike's Favorite Books! 📚</h1>
+            <br><br>
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Year</th>
+                        <th>Author</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{range .}}
+                    <tr>
+                        <td>{{.Id}}</td>
+                        <td>{{.Year}}</td>
+                        <td>{{.Author}}</td>
+                        <td>{{.Title}}</td>
+                    </tr>
+                    {{end}}
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
