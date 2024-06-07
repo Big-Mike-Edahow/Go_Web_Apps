@@ -37,7 +37,7 @@ func main() {
 // Open connection to the database
 func dbConnect() {
 	var err error
-	db, err = sql.Open("mysql", "mike:5454160s@(127.0.0.1:3306)/my_database?parseTime=true")
+	db, err = sql.Open("mysql", "foo:bar(127.0.0.1:3306)/my_database?parseTime=true")
 	if err != nil {
 		log.Fatal(err)
 	}
