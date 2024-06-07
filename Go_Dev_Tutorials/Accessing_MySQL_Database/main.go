@@ -21,7 +21,7 @@ type Album struct {
 
 func main() {
 	var err error
-	db, err = sql.Open("mysql", "mike:5454160s@tcp(127.0.0.1:3306)/recordings")
+	db, err = sql.Open("mysql", "foo:bar@tcp(127.0.0.1:3306)/recordings")
 
 	if err != nil { // Handle any errors
 		panic(err.Error())
