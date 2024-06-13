@@ -1,0 +1,52 @@
+<!-- create.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Create</title>
+</head>
+
+<body>
+    <nav>
+        <h1>Snippetbox! ✂️</h1>
+        <a href="/">Home 🎲</a>
+        <a href="/create">Create 🖊️</a>
+        <a href="/about">About 🛈</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Create a new Snippet! 🖊️</h1>
+            <br><br>
+        </section>
+        <section>
+            <form class="create-edit-container" action='/save' method='POST'>
+                <div>
+                    <label>Title:</label>
+                    <input type='text' name='title'>
+                    <br>
+                    <label>Author:</label>
+                    <input type="text" name="author">
+                    <br><br>
+                    <input class="form-button" type="submit" value="Publish Snippet">
+                </div>
+                <div>
+                    <label>First Line:</label>
+                    <input type="text" name="firstline">
+                    <br>
+                    <label>Second Line:</label>
+                    <input type="text" name="secondline">
+                    <br>
+                    <label>Third Line:</label>
+                    <input type="text" name="thirdline">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
+

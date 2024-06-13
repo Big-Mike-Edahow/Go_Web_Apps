@@ -1,0 +1,42 @@
+<!-- view.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>View</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>Snippetbox! ✂️</h1>
+        <a href="/">Home 🎲</a>
+        <a href="/create">Create 🖊️</a>
+        <a href="/about">About 🛈</a>
+    </nav>
+    <main>
+        <section class="flex-container">
+            <h1 class="headline-h1"><strong><em>{{ .Title }}...</em></strong></h1>
+            <br>
+            <div class="snippet">
+                <p>{{ .FirstLine }}</p>
+                <p>{{ .SecondLine }}</p>
+                <p>{{ .ThirdLine }}</p>
+                <br>
+                <p>- {{ .Author }}</p>
+                <br><br>
+                <time><i>Created: {{.Created}}</i></time>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go 🚲</a></p>
+    </footer>
+</body>
+
+</html>
