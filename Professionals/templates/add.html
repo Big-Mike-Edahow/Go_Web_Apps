@@ -1,0 +1,49 @@
+<!-- add.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/img/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Add</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>Professionals! 🧑‍💼</h1>
+        <a href="/">Home 🏢</a>
+        <a href="/add">Add 🖊️</a>
+        <a href="/about">About ℹ️</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Add a new record 🖊️</h1>
+            <br><br>
+        </section>
+        <section>
+            <div>
+                <form class="add-edit-container" action='/save' method='POST'>
+                    <input type="hidden" name="id" value="{{ .Id }}">
+                    <span>Name: </span>
+                    <input type='text' name='name' value="{{ .Name }}">
+                    <span>Age: </span>
+                    <input type="text" name="age" value="{{ .Age}}">
+                    <span>Employ: </span>
+                    <input type="text" name="employ" value="{{ .Employ }}">
+                    <br>
+                    <input class="form-button" type="submit" value="Create Record">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go 🚲</a></p>
+    </footer>
+</body>
+
+</html>

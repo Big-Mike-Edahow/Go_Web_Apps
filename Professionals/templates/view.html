@@ -1,0 +1,43 @@
+<!-- view.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/img/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>View</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>Professionals! 🧑‍💼</h1>
+        <a href="/">Home 🏢</a>
+        <a href="/add">Add 🖊️</a>
+        <a href="/about">About ℹ️</a>
+    </nav>
+    <main>
+        <section class="flex-container">
+            <h1 class="headline-h1"><strong>Professional Record 👨‍💼</strong></h1>
+            <br>
+            <div class="record">
+                <p>Id: {{ .Id }}</p>
+                <p>Name: {{ .Name }}</p>
+                <p>Age: {{ .Age }}</p>
+                <p>Employ: {{ .Employ }}</p>
+                <br><br>
+                <time><i>Record Created At: {{.Created}}</i></time>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go 🚲</a></p>
+    </footer>
+</body>
+
+</html>
+
