@@ -27,6 +27,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer DB.Close()
 
 	fs := http.FileServer(http.Dir("static"))
 	http.Handle("/static/", http.StripPrefix("/static", fs))
