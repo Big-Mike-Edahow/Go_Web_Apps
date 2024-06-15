@@ -1,1 +1,2 @@
-# Web Apps written in the Go Programming Language.
+# Go Web Apps
+Various web apps that I have made with the Go programming language.
