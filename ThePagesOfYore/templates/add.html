@@ -1,0 +1,61 @@
+<!-- add.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/images/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Add</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>The Pages of Yore! 📜</h1>
+        <a href="/">Home 🏰</a>
+        <a href="/add">Add 🪶</a>
+        <a href="/about">About ❔</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Transcribe a new codex 📖</h1>
+            <br>
+        </section>
+        <section>
+            <div>
+                <form class="add-edit-container" action='/save' method='POST'>
+                    <section>
+                        <div><span>ISBN: </span>
+                            <input type="text" name="isbn">
+                        </div>
+                        <div><span>Title: </span>
+                            <input type="text" name="title">
+                        </div>
+                        <div><span>Excerpt: </span>
+                            <textarea name="excerpt" rows="3" cols="40"></textarea>
+                        </div>
+                    </section>
+                    <section>
+                        <div><span>Author: </span>
+                            <input type="text" name="author">
+                        </div>
+                        <div><span>Price: </span>
+                            <input type="text" name="price">
+                        </div>
+                        <br>
+                        <input class="form-button" type="submit" value="Add Book">
+                    </section>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go 🚲</a></p>
+    </footer>
+</body>
+
+</html>
