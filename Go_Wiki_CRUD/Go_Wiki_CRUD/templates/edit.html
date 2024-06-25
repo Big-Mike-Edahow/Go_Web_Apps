@@ -1,0 +1,42 @@
+<!-- edit.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/images/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Edit</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>Go Wiki! 🌐</h1>
+        <a href="/">Home 🗣️</a>
+        <a href="/add">Add ✍️</a>
+        <a href="/about">About 🛈</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1>Editing {{.Title}}</h1>
+            <br>
+
+            <form action="/save/{{.Title}}" method="POST">
+                <article class="add-edit">
+                    <textarea name="body" rows="6" cols="40">{{printf "%s" .Body}}</textarea>
+                </article>
+                <br>
+                <input class="form-button" type="submit" value="Update">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go</a> 🚲</p>
+    </footer>
+</body>
+
+</html>
