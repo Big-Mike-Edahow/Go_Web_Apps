@@ -1,0 +1,61 @@
+<!-- add.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/images/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Add</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>Runners of the World! ⚡</h1>
+        <a href="/">Home 🏟️</a>
+        <a href="/add">Add 🖊️</a>
+        <a href="/about">About ℹ️</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1">Add a new runner 🖊️</h1>
+            <br>
+        </section>
+        <section>
+            <div>
+                <form class="add-edit-container" action='/save' method='POST'>
+                    <section>
+                        <div><span>Name: </span>
+                            <input type="text" name="name">
+                        </div>
+                        <div><span>Age: </span>
+                            <input type="text" name="age">
+                        </div>
+                        <div><span>Country: </span>
+                            <input type="text" name="country">
+                        </div>
+                    </section>
+                    <section>
+                        <div><span>Season Best: </span>
+                            <input type="text" name="season_best">
+                        </div>
+                        <div><span>Personal Best: </span>
+                            <input type="text" name="personal_best">
+                        </div>
+                        <br>
+                        <input class="form-button" type="submit" value="Add Runner">
+                    </section>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go 🚲</a></p>
+    </footer>
+</body>
+
+</html>

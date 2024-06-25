@@ -1,0 +1,51 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/images/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav>
+        <h1>Go Wiki! 🌐</h1>
+        <a href="/">Home 🗣️</a>
+        <a href="/add">Add ✍️</a>
+        <a href="/about">About 🛈</a>
+    </nav>
+    <main>
+        <section class="center">
+            <h1>Posts in the Wiki! 📬</h1>
+            <br>
+        </section>
+        <table class="center">
+            <tbody>
+                {{range .}}
+                <tr>
+                    <td>
+                        <h3><a href="/view/{{.}}">{{.}}</a></h3>
+                    </td>
+                    <td>
+                        <a class="button" href="/edit/{{.}}">Edit</a>
+                    </td>
+                    <td>
+                        <a class="button" href="/delete?title={{ . }}">Delete</a>
+                    </td>
+                </tr>
+                {{end}}
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>Powered by <a href='https://golang.org/'>Go</a> 🚲</p>
+    </footer>
+</body>
+
+</html>
