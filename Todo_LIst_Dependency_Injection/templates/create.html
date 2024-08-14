@@ -1,0 +1,39 @@
+<!-- create.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/images/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Create</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">Home 🏠</a>
+        <h1>Big Mike's Todos! 📋</h1>
+        <a href="/about">About 🛈</a>
+    </header>
+    <main>
+        <section class="center">
+            <h2>Add a Todo 📝</h2>
+            <br>
+            <div>
+                <form action="/create" method="post">
+                    {{ with .Errors.Item }}
+                    <p class="error">{{ . }}</p>
+                    {{ end }}
+                    <label class="label-area" for="item">Item</label>
+                    <input class="text-area" type="text" name="item" placeholder="What do you want to do?">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

@@ -1,0 +1,69 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/images/favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">Home 🏠</a>
+        <h1>Big Mike's Todos! 📋</h1>
+        <a href="/about">About 🛈</a>
+    </header>
+    <main>
+        <section class="grid-container">
+            <section class="center">
+                <a class="add" href="/create">
+                    <h2>Add a Todo 📝</h2>
+                </a>
+                <br>
+            </section>
+            <section class="center">
+                <h2>Todos 🗒️</h2>
+                <br>
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{range .}}
+                        {{if .Completed}}
+                        <tr>
+                            <td class="item-completed"><strike>{{.Item}}</strike></td>
+                            <td class="status-yes">Completed</td>
+                            <td>
+                                <button disabled>Complete</button>
+                                <a href="/delete?id={{.Id}}"><button class="button-danger">Delete</button></a>
+                            </td>
+                        </tr>
+                        {{else}}
+                        <tr>
+                            <td class="item-not-completed">{{.Item}}</td>
+                            <td class="status-no">Not Completed</td>
+                            <td>
+                                <a href="/update?id={{.Id}}"><button>Complete</button></a>
+                                <a href="/delete?id={{.Id}}"><button class="button-danger">Delete</button></a>
+                            </td>
+                        </tr>
+                        {{end}}
+                        {{end}}
+                    </tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
+
