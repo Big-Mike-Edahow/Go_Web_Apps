@@ -1,5 +1,4 @@
 // main.go
-// CSS Image Gallery
 
 package main
 
