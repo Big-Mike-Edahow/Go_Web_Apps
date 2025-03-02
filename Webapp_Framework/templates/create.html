@@ -1,0 +1,23 @@
+<!-- index.html -->
+
+{{define "title"}}Create{{end}}
+
+{{define "content"}}
+<section class="center">
+<h1 class="headline-h1">Create New Widget! 🪄</h1>
+<br><br>
+</section>
+<section>
+    <div>
+        <form class="add-edit-container" method='POST'>
+            <input type="hidden" name="id" value="{{ .Id }}">
+            <span><b>Name:</b> </span>
+            <input type='text' name='name' value="{{ .Name }}">
+            <span><b>Type:</b> </span>
+            <input type="text" name="type" value="{{ .Type}}">
+            <br>
+            <input class="form-button" type="submit" value="Create Widget">
+        </form>
+    </div>
+</section>
+{{end}}

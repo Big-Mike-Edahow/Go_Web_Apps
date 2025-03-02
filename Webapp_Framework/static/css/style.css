@@ -1,0 +1,159 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    color: black;
+    background-color: rgb(231, 239, 237);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #F7F9FA;
+    border-bottom: 2px solid black;
+}
+
+nav h1 {
+    font-size: 3em;
+    font-weight: 600;
+    padding-left: 50px;
+    color: black;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+nav>a {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px;
+    color: #34495E;
+    text-decoration: none;
+}
+
+main {
+    margin: 30px 10px 50px 10px;
+    padding-bottom: 100px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline-h1 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.add-edit-container {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+form input[type=text] {
+    width: 450px;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 2px 5px;
+    padding: 2px 5px;
+    color: black;
+    background: #FFFFFF;
+    border: 2px solid blue;
+    border-radius: 3px;
+}
+
+form span {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: black;
+}
+
+.form-button {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 2px 5px;
+    color: black;
+    background-color: rgb(219, 231, 234);
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.form-button:active {
+    box-shadow: inset 2px 2px 2px black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+figure>img {
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+figcaption {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    background-color: #F7F9FA;
+    border-top: 2px solid black;
+}
+
+footer>p {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+}
+
+footer > p > a {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-style: italic;
+    color: dodgerblue;
+    text-decoration: none;
+}
